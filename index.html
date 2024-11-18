@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="stylesheet" href="css/test3.css" />
+    <link rel="stylesheet" href="css/aos-master (1)/aos-master/dist/aos.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div class="background h-screen w-full">
+        <!-- header  -->
+        <header
+          class="flex box-border md:-full md:overflow-hidden z-[100] mx-auto bg-transparent px-[20px] lg:px-[35px] items-center justify-between w-full h-[65px]"
+        >
+          <div class="lg:hidden sm:block md:hidden">
+            <span onclick=" onToggleMenu(this)"
+              ><ion-icon
+                class="text-white font-bold text-2xl"
+                name="menu-outline"
+              ></ion-icon
+            ></span>
+          </div>
+          <span
+            class="md:w-[15%] ml-[10px] lg:px-0 text-white font-extrabold text-lg lg:text-xl text-center cursor-pointer w-[35%] py-[15px] lg:py-[15px] h-[60px]"
+            >Hamony<span class="text-blue-500">Hub.</span></span
+          >
+          <nav
+            class="nav_links md:static lg:place-content-end gap-4 md:min-h-fit h-screen md:w-auto md:items-center md:bg-transparent flex md:flex-row lg:bg-transparent bg-black w-[65%] lg:w-full duration-[0.5s] md:z-0 z-[100] text-start py-[15px] flex-col absolute top-[0%] left-[-100%]"
+          >
+            <div
+              class="lg:hidden text-end text-lg px-[15px] sm:block md:hidden"
+            >
+              <span class="" onclick="onToggleMenu(this)"
+                ><ion-icon
+                  class="text-white font-bold text-2xl align-middle"
+                  name="close-outline"
+                ></ion-icon
+              ></span>
+            </div>
+            <a
+              onclick="onToggleMenu(this)"
+              class="px-[13px] font-serif text-[14px] hover:text-blue-500 mx-[10px] duration-[1s] text-white rounded py-[15px]"
+              href="#home"
+              >Home</a
+            >
+            <a
+              onclick="onToggleMenu(this)"
+              class="px-[13px] font-serif text-[14px] text-white hover:text-blue-500 duration-[1s] rounded py-[15px] mx-[10px]"
+              href="#about"
+              >About</a
+            >
+            <a
+              onclick="onToggleMenu(this)"
+              class="px-[13px] font-serif text-[14px] text-white hover:text-blue-500 duration-[1s] rounded py-[15px] mx-[10px]"
+              href="#service"
+              >Service</a
+            >
+            <a
+              onclick="onToggleMenu(this)"
+              class="px-[13px] font-serif text-[14px] text-white hover:text-blue-500 duration-[1s] rounded py-[15px] mx-[10px]"
+              href="#team"
+              >Team</a
+            >
+
+            <a
+              onclick="onToggleMenu(this)"
+              class="px-[13px] font-serif text-[14px] text-white hover:text-blue-500 duration-[1s] rounded py-[15px] mx-[10px]"
+              href="#contact"
+              >Contact</a
+            >
+
+            <a
+              onclick="onToggleMenu(this)"
+              class="px-[13px] font-serif text-[14px] text-white hover:text-blue-500 duration-[1s] rounded py-[15px] mx-[10px]"
+              href="library.html"
+              >Library</a
+            >
+          </nav>
+        </header>
+        <!-- header-ends  -->
+        <!-- hero -->
+        <div class="w-full grid place-content-center h-[85vh]">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            class="lg:w-[70%] text-center w-[90%] mx-auto"
+          >
+            <h1
+              class="text-white text-center py-[10px] font-extrabold text-2xl lg:text-4xl"
+            >
+              Uniting <span class="text-blue-500 underline">Voices </span> ,
+              Spreading Hope.
+            </h1>
+            <p class="text-center text-sm py-[5px] text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              assumenda excepturi inventore suscipit eum eaque praesentium
+              minima adipisci iste, odit esse possimus consequuntur sint, hic,
+              veritatis incidunt eius. Error aperiam assumenda quae tempora non
+              amet exercitationem laudantium, quod atque quas eligendi nobis
+              modi dolorum ipsa! Error quam, nihil dicta consectetur quaerat
+              ducimus tenetur minus repudiandae facilis quibusdam amet, sapiente
+              natus.
+            </p>
+            <div class="flex gap-3 text-center place-content-center">
+              <button
+                class="px-[10px] py-[5px] w-[150px] mt-[20px] bg-blue-500 text-white font-semibold rounded-md"
+              >
+                Start listening
+                <ion-icon
+                  class="align-middle text-lg"
+                  name="headset-outline"
+                ></ion-icon>
+              </button>
+
+              <button
+                class="px-[10px] py-[5px] w-[150px] mt-[20px] bg-white text-blue-500 font-semibold rounded-md"
+              >
+                Contact
+                <ion-icon
+                  class="align-middle text-lg"
+                  name="call-outline"
+                ></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- hero end  -->
+      </div>
+      <section id="song" class="w-full bg-blue-500 pt-[30px] py-[20px]">
+        <div class="lg:w-[90%] mx-auto w-[90%]">
+          <h2
+            class="text-white pb-[10px] pt-[20px] text-center font-bold text-xl"
+          >
+            Songs
+          </h2>
+          <div
+            class="grid lg:grid-cols-4 px-[10px] py-[10px] gap-3 grid-cols-2"
+          >
+            <div
+              data-aos="fade-up"
+              data-aos-duration="500"
+              class="h-[350px] w-full"
+            >
+              <img
+                class="h-[200px] w-full object-cover"
+                src="image/back2.jpg"
+                alt=""
+              />
+              <div class="h-[150px] place-content-center bg-white">
+                <h3
+                  class="capitalize text-center text-black font-serif font-bold"
+                >
+                  God Is With us
+                </h3>
+                <p class="text-[13px] text-center text-black">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Optio, ducimus!
+                </p>
+                <div class="text-center mt-[10px]">
+                  <span
+                    class="h-[50px] w-[50px] py-[10px] px-[10px] rounded-full bg-blue-500 place-content-center align-middle items-center"
+                    ><a
+                      class="text-2xl hover:text-yellow-500 duration-[0.5s]"
+                      href=""
+                    >
+                      <ion-icon
+                        class="align-middle"
+                        name="play-circle-outline"
+                      ></ion-icon></a
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- first card  -->
+
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="h-[350px] w-full"
+            >
+              <img
+                class="h-[200px] w-full object-cover"
+                src="image/back7.jpg"
+                alt=""
+              />
+              <div class="h-[150px] place-content-center bg-white px-[5px]">
+                <h3
+                  class="capitalize text-center text-black font-serif font-bold"
+                >
+                  God Is With us
+                </h3>
+                <p class="text-[13px] text-center text-black">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Optio, ducimus!
+                </p>
+                <div class="text-center mt-[10px]">
+                  <span
+                    class="h-[50px] w-[50px] py-[10px] px-[10px] rounded-full bg-blue-500 place-content-center align-middle items-center"
+                    ><a
+                      class="text-2xl hover:text-yellow-500 duration-[0.5s]"
+                      href=""
+                    >
+                      <ion-icon
+                        class="align-middle"
+                        name="play-circle-outline"
+                      ></ion-icon></a
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              class="h-[350px] w-full"
+            >
+              <img
+                class="h-[200px] w-full object-cover"
+                src="image/back4.jpg"
+                alt=""
+              />
+              <div class="h-[150px] place-content-center bg-white px-[5px]">
+                <h3
+                  class="capitalize text-center text-black font-serif font-bold"
+                >
+                  God Is With us
+                </h3>
+                <p class="text-[13px] text-center text-black">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Optio, ducimus!
+                </p>
+                <div class="text-center mt-[10px]">
+                  <span
+                    class="h-[50px] w-[50px] py-[10px] px-[10px] rounded-full bg-blue-500 place-content-center align-middle items-center"
+                    ><a
+                      class="text-2xl hover:text-yellow-500 duration-[0.5s]"
+                      href=""
+                    >
+                      <ion-icon
+                        class="align-middle"
+                        name="play-circle-outline"
+                      ></ion-icon></a
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              class="h-[350px] w-full"
+            >
+              <img
+                class="h-[200px] w-full object-cover"
+                src="image/back8.jpg"
+                alt=""
+              />
+              <div class="h-[150px] place-content-center bg-white px-[5px]">
+                <h3
+                  class="capitalize text-center text-black font-serif font-bold"
+                >
+                  God Is With us
+                </h3>
+                <p class="text-[13px] text-center text-black">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Optio, ducimus!
+                </p>
+                <div class="text-center mt-[10px]">
+                  <span
+                    class="h-[50px] w-[50px] py-[10px] px-[10px] rounded-full bg-blue-500 place-content-center align-middle items-center"
+                    ><a
+                      class="text-2xl hover:text-yellow-500 duration-[0.5s]"
+                      href=""
+                    >
+                      <ion-icon
+                        class="align-middle"
+                        name="play-circle-outline"
+                      ></ion-icon></a
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <!-- space  -->
+          </div>
+          <div
+            class="w-[200px] pt-[10px] text-center place-content-center mx-auto"
+          >
+            <a
+              class="bg-white w-[100px] text-blue-500 font-semibold text-center rounded-md py-[6px] px-[10px]"
+              href=""
+              >See All</a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="about" class="bg-white pt-[70px] py-[20px]">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="lg:w-[90%] w-[95%] mt-[20px] mx-auto lg:flex gap-4"
+        >
+          <div class="lg:w-[50%] w-[95%] mx-auto">
+            <img
+              class="h-[350px] bg-black aspect-[4/3] mx-auto lg:w-[85%] w-[90%] rounded-md"
+              src="image/victor-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div class="lg:w-[50%] pt-[20px] w-[95%] mx-auto">
+            <h2 class="text-black text-xl font-bold">
+              About <span class="text-blue-500">Us</span>
+            </h2>
+            <p class="text-sm pt-[30px]">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime,
+              alias.
+            </p>
+            <p class="text-sm pt-[10px]">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint,
+              laboriosam a quibusdam labore harum quia dolorem omnis dolore,
+              atque blanditiis quaerat architecto eligendi, vel aliquam eaque
+              neque pariatur. Veritatis, aliquid. Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Repellendus quae blanditiis
+              perspiciatis assumenda unde quod nemo culpa magni cumque facilis?
+            </p>
+            <div>
+              <h3 class="text-blue-500 font-bold text-sm pt-[10px]">Reviews</h3>
+              <div class="flex gap-3 mt-[20px]">
+                <div
+                  data-aos="flip-right"
+                  data-aos-duration="500"
+                  class="w-[130px] text-center border-2 border-blue-500 rounded p-[10px]"
+                >
+                  <span class="font-bold text-black block"
+                    >50<ion-icon class="" name="add-sharp"></ion-icon
+                  ></span>
+                  <span class="font-semibold text-sm">Songs</span>
+                </div>
+
+                <div
+                  data-aos="flip-right"
+                  data-aos-duration="1000"
+                  class="w-[130px] text-center border-2 border-blue-500 rounded p-[10px]"
+                >
+                  <span class="font-bold text-black block"
+                    >30<ion-icon class="" name="add-sharp"></ion-icon
+                  ></span>
+                  <span class="font-semibold text-sm">Students</span>
+                </div>
+
+                <div
+                  data-aos="flip-right"
+                  data-aos-duration="1500"
+                  class="w-[130px] text-center border-2 border-blue-500 rounded p-[10px]"
+                >
+                  <span class="font-bold text-black block"
+                    >100<ion-icon class="" name="add-sharp"></ion-icon
+                  ></span>
+                  <span class="font-semibold text-sm">Happy Clients</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="service" class="bg-white pt-[70px] py-[20px]">
+        <div class="lg:w-[90%] mx-auto w-[90%]">
+          <h2
+            class="text-blue-500 pb-[15px] pt-[20px] text-center font-bold text-xl"
+          >
+            Service
+          </h2>
+          <div class="grid gap-3 grid-cols-2 lg:grid-cols-4">
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              class="bg-blue-500 hover:bg-white hover:border-2 hover:border-blue-500 hover:text-blue-500 duration-[0.5s] text-white h-[250px] rounded-md p-[10px]"
+            >
+              <span class="block pt-[10px] text-center text-3xl font-bold"
+                ><ion-icon
+                  class="align-middle"
+                  name="headset-outline"
+                ></ion-icon
+              ></span>
+              <h3 class="font-bold text-center pt-[10px]">Artist</h3>
+              <div>
+                <p class="text-sm text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                  expedita laudantium delectus inventore necessitatibus maiores
+                  fugit sint odio eveniet modi.
+                </p>
+              </div>
+            </div>
+
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              class="bg-blue-500 hover:bg-white hover:border-2 hover:border-blue-500 hover:text-blue-500 duration-[0.5s] text-white h-[250px] rounded-md p-[10px]"
+            >
+              <span class="block pt-[10px] text-center text-3xl font-bold"
+                ><ion-icon name="cash-outline"></ion-icon
+              ></span>
+              <h3 class="font-bold text-center pt-[10px]">
+                Buisness Promoting
+              </h3>
+              <div>
+                <p class="text-sm text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                  expedita laudantium delectus inventore necessitatibus maiores
+                  fugit sint odio eveniet modi.
+                </p>
+              </div>
+            </div>
+
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+              class="bg-blue-500 hover:bg-white hover:border-2 hover:border-blue-500 hover:text-blue-500 duration-[0.5s] text-white h-[250px] rounded-md p-[10px]"
+            >
+              <span class="block pt-[10px] text-center text-3xl font-bold"
+                ><ion-icon name="musical-note-outline"></ion-icon
+              ></span>
+              <h3 class="font-bold text-center pt-[10px]">Music Tutor</h3>
+              <div>
+                <p class="text-sm text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                  expedita laudantium delectus inventore necessitatibus maiores
+                  fugit sint odio eveniet modi.
+                </p>
+              </div>
+            </div>
+
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+              class="bg-blue-500 hover:bg-white hover:border-2 hover:border-blue-500 hover:text-blue-500 duration-[0.5s] text-white h-[250px] rounded-md p-[10px]"
+            >
+              <span class="block pt-[10px] text-center text-3xl font-bold"
+                ><ion-icon name="calendar-number-outline"></ion-icon
+              ></span>
+              <h3 class="font-bold text-center pt-[10px]">Artist</h3>
+              <div>
+                <p class="text-sm text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                  expedita laudantium delectus inventore necessitatibus maiores
+                  fugit sint odio eveniet modi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="team" class="bg-blue-500 pt-[70px] py-[20px]">
+        <div class="lg:w-[90%] mx-auto w-[90%]">
+          <h2 class="text-white pt-[10px] text-center font-bold text-xl">
+            My Team
+          </h2>
+          <div>
+            <div
+              class="main-background pt-[50px] flex items-center justify-center py-[10px]"
+            >
+              <div class="lg:w-[70%] w-[95%] testimonial mx-auto">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                  class="text-blue-500 testimonial-text w-full bg-white rounded-md relative lg:h-[300px] h-[450px] shadow-md"
+                >
+                  <div
+                    class="w-[85%] user-text active-text absolute top-[30px] lg:top-[70px] left-[20px] lg:left-[60px] text-center"
+                  >
+                    <div class="place-content-center py-[10px] flex mx-auto">
+                      <img
+                        class="w-[90px] rounded-full h-[90px]"
+                        src="image/victor.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-sm font-semibold">
+                      Victor Zamani is a gifted gospel singer with a heart for
+                      worship. As leader of his church's worship team, he
+                      inspires with his powerful voice and passion for music.
+                      His soulful melodies uplift and transform lives. With a
+                      voice that echoes hope and redemption, Victor Zamani is a
+                      true worship leader.
+                    </p>
+
+                    <span class="font-bold text-[16px] uppercase mt-[30px]"
+                      >Victor Zamani.</span
+                    >
+                  </div>
+                  <div
+                    class="w-[85%] user-text absolute top-[30px] lg:top-[70px] left-[20px] lg:left-[60px] text-center"
+                  >
+                    <div class="place-content-center py-[10px] flex mx-auto">
+                      <img
+                        class="w-[90px] rounded-full h-[90px]"
+                        src="image/back3.avif"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-sm font-semibold">
+                      Lorem ipsum dolor test1 sit amet consectetur adipisicing
+                      elit. Nulla hic eligendi suscipit inventore quas ipsa
+                      provident modi quia aspernatur quae, fugit consectetur!
+                      Voluptatum suscipit accusamus sequi minima, placeat est
+                      libero? Lorem ipsum dolor sit amet, consectetur
+                      adipisicing elit. Repellendus, mollitia adipisci incidunt
+                      quisquam officiis facere autem2
+                    </p>
+
+                    <span class="font-bold text-[16px] uppercase mt-[30px]"
+                      >Mr Emekus , CEO BANT2.</span
+                    >
+                  </div>
+
+                  <div
+                    class="w-[85%] user-text absolute top-[30px] lg:top-[70px] left-[20px] lg:left-[60px] text-center"
+                  >
+                    <div class="place-content-center py-[10px] flex mx-auto">
+                      <img
+                        class="w-[90px] rounded-full h-[90px]"
+                        src="image/back6.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-sm font-semibold">
+                      Lorem ipsum dolor test1 sit amet consectetur adipisicing
+                      elit. Nulla hic eligendi suscipit inventore quas ipsa
+                      provident modi quia aspernatur quae, fugit consectetur!
+                      Voluptatum suscipit accusamus sequi minima, placeat est
+                      libero? Lorem ipsum dolor sit amet, consectetur
+                      adipisicing elit. Repellendus, mollitia adipisci incidunt
+                      quisquam officiis facere autem3
+                    </p>
+
+                    <span class="font-bold text-[16px] uppercase mt-[30px]"
+                      >Mr Victor , CEO BANT31.</span
+                    >
+                  </div>
+
+                  <div
+                    class="w-[85%] user-text absolute top-[30px] lg:top-[70px] left-[20px] lg:left-[60px] text-center"
+                  >
+                    <div class="place-content-center py-[10px] flex mx-auto">
+                      <img
+                        class="w-[90px] rounded-full h-[90px]"
+                        src="image/back8.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="text-sm font-semibold">
+                      Lorem ipsum dolor test1 sit amet consectetur adipisicing
+                      elit. Nulla hic eligendi suscipit inventore quas ipsa
+                      provident modi quia aspernatur quae, fugit consectetur!
+                      Voluptatum suscipit accusamus sequi minima, placeat est
+                      libero? Lorem ipsum dolor sit amet, consectetur
+                      adipisicing elit. Repellendus, mollitia adipisci incidunt
+                      quisquam officiis facere autem4
+                    </p>
+
+                    <span class="font-bold text-[16px] uppercase mt-[30px]"
+                      >Mr Stephen , CEO BANT10.</span
+                    >
+                  </div>
+                  <!-- space -->
+                </div>
+
+                <div
+                  class="testimonial-pic flex gap-3 pt-[20px] items-center justify-center"
+                >
+                  <img
+                    onclick="showReview()"
+                    class="w-[20px] user-pic active-pic h-[20px] rounded-full"
+                    src="image/victor.jpg"
+                    alt=""
+                  />
+
+                  <img
+                    onclick="showReview()"
+                    class="w-[20px] user-pic h-[20px] rounded-full"
+                    src="image/back3.avif"
+                    alt=""
+                  />
+
+                  <img
+                    onclick="showReview()"
+                    class="w-[20px] user-pic h-[20px] rounded-full"
+                    src="image/back6.jpg"
+                    alt=""
+                  />
+
+                  <img
+                    onclick="showReview()"
+                    class="w-[20px] user-pic h-[20px] rounded-full"
+                    src="image/back8.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- sca  -->
+          </div>
+        </div>
+      </section>
+      <section class="pt-[50px] py-[20px]" id="contact">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          class="lg:w-[95%] w-[90%] mx-auto"
+        >
+          <h2 class="text-blue-500 pt-[10px] text-center font-bold text-xl">
+            Contact
+          </h2>
+          <div class="lg:w-[85%] mt-[20px] lg:flex w-[90%] mx-auto">
+            <div class="lg:w-[50%] w-full">
+              <p class="font-light text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam dolorem inventore aspernatur suscipit. Illo corporis
+                suscipit voluptate reprehenderit tempore tempora! Officia
+                facilis impedit dolorem distinctio maxime at blanditiis quas
+                rerum, assumenda sint! Dolor aperiam aliquid ducimus eligendi at
+                veniam ipsum consequatur, incidunt quaerat deleniti labore sit
+                ab. Sapiente, aliquid earum? Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Magnam, sed!
+              </p>
+              <div class="mt-[10px]">
+                <span
+                  class="text-blue-500 pr-[5px] align-middle text-xl font-bold"
+                  ><ion-icon name="location-sharp"></ion-icon
+                ></span>
+                <p class="inline-block font-serif font-semibold">
+                  Kaduna, Nigeria.
+                </p>
+              </div>
+              <div>
+                <span
+                  class="text-blue-500 pr-[5px] align-middle text-xl font-bold"
+                  ><ion-icon name="call-sharp"></ion-icon
+                ></span>
+                <p class="inline-block font-serif font-semibold">
+                  09027498384.
+                </p>
+              </div>
+              <div>
+                <span
+                  class="text-blue-500 pr-[5px] align-middle text-xl font-bold"
+                  ><ion-icon name="mail-unread-sharp"></ion-icon
+                ></span>
+                <p class="inline-block font-serif font-semibold">
+                  Victor2@gmail.com
+                </p>
+              </div>
+            </div>
+            <div class="lg:w-[50%] lg:mt-0 mt-[20px] w-full">
+              <form action="" method="post">
+                <div class="w-[95%] mx-auto">
+                  <input
+                    class="w-full px-[10px] placeholder:text-neutral-600 placeholder:font-serif rounded py-[7px] text-sm text-neutral-600 outline-none bg-neutral-300"
+                    type="text"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="w-[95%] mt-[10px] mx-auto">
+                  <input
+                    class="w-full placeholder:text-neutral-600 placeholder:font-serif px-[10px] rounded py-[7px] text-sm text-neutral-600 outline-none bg-neutral-300"
+                    type="text"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="w-[95%] mt-[10px] mx-auto">
+                  <textarea
+                    class="w-full placeholder:text-neutral-600 placeholder:font-serif px-[10px] rounded py-[7px] text-sm text-neutral-600 outline-none bg-neutral-300"
+                    type="text"
+                    cols="10"
+                    rows="8"
+                    placeholder="Body"
+                  ></textarea>
+                </div>
+                <div class="w-[95%] mt-[10px] text-end mx-auto">
+                  <button
+                    class="bg-blue-500 w-[90px] rounded text-white font-semibold px-[10px] py-[7px]"
+                  >
+                    Send
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="w-full bg-blue-500 text-white py-[20px]">
+        <div class="lg:w-[90%] w-[95%] mx-auto">
+          <div class="grid lg:grid-cols-4 gap-4 grid-cols-1">
+            <div class="w-full">
+              <h2 class="font-bold py-[20px]">HamonyHub</h2>
+
+              <span class="text-sm font-semibold"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur, quidem Lorem ipsum dolor sit amet.</span
+              >
+            </div>
+
+            <div class="w-full">
+              <h2 class="font-bold py-[20px]">Contact</h2>
+
+              <span class="text-sm py-[5px] font-semibold block">
+                <ion-icon class="px-[5px]" name="call-outline"></ion-icon
+                >09027498382</span
+              >
+              <span class="text-sm py-[5px] font-semibold block">
+                <ion-icon class="px-[5px]" name="call-outline"></ion-icon
+                >09027498382</span
+              >
+              <span class="text-sm py-[5px] font-semibold block">
+                <ion-icon class="px-[5px]" name="location-outline"></ion-icon>
+                Banana island Lagos</span
+              >
+              <span class="text-sm py-[3px] font-semibold block">
+                <ion-icon class="px-[5px]" name="mail-unread-outline"></ion-icon
+                >Merohotel@gmail.com</span
+              >
+            </div>
+
+            <div class="w-full">
+              <h2 class="font-bold py-[20px]">Links</h2>
+
+              <a href="" class="text-sm py-[5px] font-semibold block">Home</a>
+              <a href="" class="text-sm py-[5px] font-semibold block"
+                >Services</a
+              >
+              <a href="" class="text-sm py-[5px] font-semibold block">About</a>
+              <a href="" class="text-sm py-[5px] font-semibold block">FAQ</a>
+            </div>
+
+            <div class="w-full">
+              <h2 class="font-bold py-[20px]">Copyrights</h2>
+
+              <span class="text-[11px] font-bold"
+                >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Reiciendis voluptates culpa adipisci, enim ratione minima
+                dolorem cupiditate ea totam quam.</span
+              >
+              <p class="text-[12px] py-[5px]">
+                &copy; HamonyHub &bull;2020 All Rights Reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script>
+      const nav_links = document.querySelector(".nav_links");
+      function onToggleMenu(e) {
+        e.name = e.name === "menu" ? "close" : "menu";
+        nav_links.classList.toggle("left-[0%]");
+      }
+
+      let userTexts = document.getElementsByClassName("user-text");
+      let userPics = document.getElementsByClassName("user-pic");
+
+      function showReview() {
+        for (userPic of userPics) {
+          userPic.classList.remove("active-pic");
+        }
+        for (userText of userTexts) {
+          userText.classList.remove("active-text");
+        }
+
+        let i = Array.from(userPics).indexOf(event.target);
+        userPics[i].classList.add("active-pic");
+        userTexts[i].classList.add("active-text");
+      }
+    </script>
+    <script src="css/aos-master (1)/aos-master/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
