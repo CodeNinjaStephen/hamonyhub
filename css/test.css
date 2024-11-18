@@ -1,0 +1,6 @@
+.library {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../image/headphones-are-dark-color-against-wooden-wall_120871-142.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
